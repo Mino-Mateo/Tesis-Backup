@@ -75,7 +75,9 @@
             </div>
 
             <!-- Foto de la caja -->
-            <div class="flex justify-center items-center">
+            <div class="flex flex-col justify-center items-center space-y-2">
+              <!-- Nombre de la caja -->
+              <p class="mt-2 text-center text-2xl font-semibold text-texto">{{ selectedPedido.caja }}</p>
               <div class="bg-light w-[240px] h-[240px] flex justify-center items-center rounded-card p-3">
                 <img 
                   :src="selectedPedido.foto" 
